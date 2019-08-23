@@ -1,0 +1,61 @@
+# NamelessX Plugin configuration
+
+# For example http(s)://yoursite.com/api/v2/API_KEY or http(s)://yoursite.com/index.php?route=/api/v2/API_KEY
+# Enable the API and obtain the API URL in StaffCP > Configuration > API
+# After setting this, you need to do a full server restart, because the plugin's reload command won't work.
+api-url: ""
+
+# Enter this if you wish for the plugin to send data about this server
+# and its players to the website. This is required for username and rank synchronisation.
+# You can find this in StaffCP > Integrations > Minecraft > Minecraft Servers
+server-id: 0
+
+# This feature sends information about the server and online players to
+# your NamelessMC website. This value is in seconds. Increase to lower
+# the frequency that data is sent. Decrease to send data more frequently.
+# Setting this too low can cause lag. Set to 0 to disable.
+server-data-upload-rate: 10
+
+# You can add PlaceholderAPI placeholders (without {} or %%) here, they will be sent to the website to be used by NamelessMC or addons.
+# The placeholders can be global or player-specific
+# This option will work regardless of the "enable-placeholders" option
+upload-placeholders:
+- player_level
+
+
+# Enable PlaceholderAPI placeholders
+# This will increase traffic to your NamelessMC website (depending on placeholders-request-delay)
+# This option will be ignored if PlaceholderAPI is not installed
+enable-placeholders: false
+
+# Number of milliseconds in between notifications request
+# Lower number means more frequent updates of placeholders, but higher
+# network usage.
+placeholders-request-delay: 2000
+
+# Turn on debug mode for the underlying NamelessMC Java API
+api-debug-mode: false
+
+# Send a message to players who don't have a NamelessMC account when they join
+not-registered-join-message: false
+
+# Send a message if a player has notifications on his account
+check-notifications-join-message: true
+
+# Auto whitelist registered players.
+#
+# When enabled, the plugin will automatically whitelist players that are registered on the website.
+# Warning: Anyone who is not registered on the website will be removed from the whitelist, also
+# if they were added before enabling this option!
+# By default, the plugin will poll the website every 5 minutes to get a list of registered users.
+# You need to fully restart the server after changing this option.
+auto-whitelist-registered:
+  enabled: false
+  # Do not whitelist banned users
+  exclude-banned: true
+  # Do not whitelist users who have not activated their account
+  exclude-inactive: false
+  
+# Configure the user agent to be more like something a browser would send if requests
+# from the plugins are being blocked.
+user-agent: 'NamelessX Plugin'

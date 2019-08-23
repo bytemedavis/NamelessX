@@ -1,0 +1,13 @@
+name: NamelessX
+main: net.antopiamc.NamelessX.NamelessPlugin
+author: bytemedavis
+authors: [bytemedavis, Derkades, Samerton, IsS127]
+website: https://github.com/bytemedavis/NamelessX
+version: ${project.version}
+
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  namelessplugin:
+    description: NamelessX plugin command (/nlpl also works)
+    aliases: [namelessxplugin, nlxpl, nlpl, npx]
