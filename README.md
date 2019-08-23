@@ -1,5 +1,5 @@
-# NamelessX (WIP)
-This is a fork of the official Minecraft plugin for NamelessMC v2, that focuses on optimized performance, security and being user-friendly.
+# NamelessX
+This is a fork of the official Minecraft plugin for NamelessMC v2, that focuses on optimized performance and being more user-friendly.
 
 # Features
 * Registration for your NamelessMC Website
@@ -13,8 +13,8 @@ This is a fork of the official Minecraft plugin for NamelessMC v2, that focuses 
 # Installation (for 1.8 - 1.14 Servers)
 Install the plugin in your Spigot/Paper (Paper is recommended) server, and enter an API key and server id in config.yml.
 
-# Download
-WIP
+## Download the [latest release here](https://github.com/bytemedavis/NamelessX/releases)
+
 
 ## Discord
 [<img src="https://discordapp.com/api/guilds/246705793066467328/widget.png?style=shield">](https://discord.gg/J6QsVaP) <- Official Discord of NamelessMC
