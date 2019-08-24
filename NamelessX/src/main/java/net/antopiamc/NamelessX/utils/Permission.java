@@ -7,8 +7,6 @@ public enum Permission {
 
 	COMMAND_GET_NOTIFICATIONS("namelessx.command.getnotifications"),
 	COMMAND_REGISTER("namelessx.command.register"),
-	COMMAND_REPORT("namelessx.command.report"),
-	COMMAND_SET_GROUP("namelessx.command.setgroup"),
 	COMMAND_USER_INFO("namelessx.command.userinfo"),
 	COMMAND_VALIDATE("namelessx.command.validate"),
 

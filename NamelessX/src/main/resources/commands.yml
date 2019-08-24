@@ -10,5 +10,5 @@ enable-additional-commands: true
 # Set a command name to "disabled" to disable the command.
 get-notifications: 'notifications'
 register: 'register'
-user-info: 'info'
+user-info: 'userinfo'
 validate: 'validate'
