@@ -6,7 +6,7 @@
 
     <groupId>net.antopiamc</groupId>
     <artifactId>NamelessX</artifactId>
-    <version>build-1.0</version>
+    <version>build-1.0.1</version>
 
     <build>
         <plugins>

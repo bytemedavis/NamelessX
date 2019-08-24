@@ -49,7 +49,6 @@ public class NamelessPlugin extends JavaPlugin {
 	public void onLoad() {
 		instance = this;
 		LOG_MANAGER = new LogManager(this);
-		CHAIN_FACTORY = BukkitTaskChainFactory.create(this);
 
 		if (this.getServer().getPluginManager().getPlugin("Vault") != null) {
 			final RegisteredServiceProvider<Permission> permissionProvider = this.getServer().getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
@@ -90,6 +89,7 @@ public class NamelessPlugin extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+		CHAIN_FACTORY = BukkitTaskChainFactory.create(this);
 		this.initHooks();
 
 		// Connection is successful, move on with registering listeners and commands.
