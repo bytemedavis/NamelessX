@@ -31,7 +31,7 @@ public class UserInfoCommand extends Command {
 			}
 			
 			// Player itself as first argument
-			return execute(sender, new String[] {((Player) sender).getUniqueId().toString()});
+			return execute(sender, new String[] {sender.getName()});
 		}
 		
 		if (args.length != 1) {
@@ -72,8 +72,8 @@ public class UserInfoCommand extends Command {
 					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_DISPLAYNAME.getMessage("displayname", target.getDisplayName()));
 					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_UUID.getMessage("uuid", target.getUniqueId()));
 					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_GROUP.getMessage("groupname", target.getGroupName(), "id", target.getGroupID()));
-					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_REGISTERDATE.getMessage("date", target.getRegisteredDate())); // TODO Format nicely (add option in config for date format)
-					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_REPUTATION.getMessage("{reputation}", target.getReputation()));
+					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_REGISTERDATE.getMessage("date", target.getRegisteredDate()));
+					//sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_REPUTATION.getMessage("{reputation}", target.getReputation())); // Not implemented yet
 					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_VALIDATED.getMessage("validated", validated));
 					sender.sendMessage(Message.COMMAND_USERINFO_OUTPUT_BANNED.getMessage("banned", banned));
 				})
